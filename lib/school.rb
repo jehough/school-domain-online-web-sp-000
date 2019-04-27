@@ -9,6 +9,7 @@ class School
     @roster = {}
   end
   def add_student (student, key)
-    @roster[key] = [student]
+    @roster[key] = []
+    @roster[key] << student
   end
 end
