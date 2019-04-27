@@ -1,4 +1,3 @@
-# code here!
 class School
   attr_accessor
   attr_reader :school_name, :roster
@@ -11,5 +10,12 @@ class School
       @roster[key] = []
     end
     @roster[key] << student
+  end
+  def grade (grade)
+    @roster.each do |level, students|
+      if level == grade
+        return students
+      end
+    end
   end
 end
